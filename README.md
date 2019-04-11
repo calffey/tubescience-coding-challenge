@@ -27,9 +27,9 @@ Given the following JSON string
 * The header section should display a "-" sign by default. When a user clicks this, it will change to a "+" sign.
 * Displays a content section by default under the header section. When the "-" sign in the header is clicked, this content section becomes hidden.
 * The content section contains 2 panels side by side. The first panel (panel A) should display contentA data. Content in this panel is visible by default.
-* The second panel (panel B) should display contentB data. The contents of this panel is hidden by default. The background of this should be *EEEEEE by default.
-* When panel B (with the hidden content) is clicked the background should change to *FFFFFF and the content should become visible.
-* When panel B content becomes visible, panel A content should become hidden and the background color should change to *EEEEEE.
+* The second panel (panel B) should display contentB data. The contents of this panel is hidden by default. The background of this should be #EEEEEE by default.
+* When panel B (with the hidden content) is clicked, the background should change to #FFFFFF and it's content should become visible.
+* When panel B content becomes visible, panel A content should become hidden and the background color should change to #EEEEEE.
 * The hide/show behavior above should be repeatable any number of times.
 
 See mockup.png for a reference.
