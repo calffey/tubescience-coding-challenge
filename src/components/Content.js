@@ -7,7 +7,7 @@ class Content extends Component {
 
     render(){
         return(
-            <div className={this.props.isToggleOn ? "Content-show": "Content-hide"}>
+            <div className={this.props.isToggleOn ? "ContentShow": "ContentHide"}>
                <PanelA 
                     contentAData={this.props.contentAData}
                     isPanelToggleOn={this.props.isPanelToggleOn}

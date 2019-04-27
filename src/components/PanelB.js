@@ -5,7 +5,7 @@ class PanelB extends Component {
     render(){
         return(
             <div 
-                className={this.props.isPanelToggleOn ? "PanelA" : "PanelB"}
+                className={this.props.isPanelToggleOn ? "PanelShow" : "PanelHide"}
                 onClick={this.props.panelClick}
             >
                <h1>{this.props.contentBData}</h1>
