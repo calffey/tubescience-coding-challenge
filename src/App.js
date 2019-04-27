@@ -23,14 +23,12 @@ class App extends Component {
     }
 
     handleClick(){
-        console.log('hit')
         this.setState( state => ({
             isToggleOn: !state.isToggleOn,
         }));
     }
 
     panelClick(){
-        console.log('panel')
         this.setState( state => ({
             isPanelToggleOn: !state.isPanelToggleOn
         }));
