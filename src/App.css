@@ -1,0 +1,108 @@
+/* GENERAL */
+
+html, body, #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+/* APP */
+
+.App {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+.Header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #292D36;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.headerList {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+}
+
+#headerElements {
+    list-style: none;
+    font-size: 20px;
+}
+
+.plusMinus {
+    position: absolute;
+    justify-content: center;
+    margin-left: 90%;
+    cursor: pointer;
+    font-size: 50px;
+    color: white;
+    border: none;
+    background: none;
+}
+
+.plusMinus:focus {
+    outline: none;
+}
+
+.plusMinus:active {
+    outline: none;
+}
+
+.Header h1 {
+    margin-top: 0;
+}
+
+
+/* CONTENT */
+
+.Content-show {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Content-hide {
+    opacity: 0;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.PanelA {
+    width: 600px;
+    height: 75%;
+    margin: 50px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+.PanelA h1 {
+    padding: 15px;
+}
+
+.PanelB {
+    width: 600px;
+    height: 75%;
+    margin: 50px;
+    background-color: #EEEEEE;
+    border-radius: 5px;
+}
+
+.PanelB h1 {
+    visibility: hidden;
+    padding: 15px;
+}
