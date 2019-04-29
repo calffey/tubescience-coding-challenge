@@ -42,6 +42,7 @@ const withData = (WrappedComponent) => {
         render() {
             return <WrappedComponent 
                         {...this.state}
+                        {...this.props}
                         handleClick={this.handleClick}
                         panelClick={this.panelClick}
                     />
