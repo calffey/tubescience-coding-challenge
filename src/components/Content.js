@@ -1,25 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PanelA from './PanelA';
 import PanelB from './PanelB';
 import '../App.css';
 
-class Content extends Component {
-
-    render(){
-        return(
-            <div className={this.props.isToggleOn ? "ContentShow": "ContentHide"}>
-               <PanelA 
-                    contentAData={this.props.contentAData}
-                    isPanelToggleOn={this.props.isPanelToggleOn}
-                />
-                <PanelB 
-                    contentBData={this.props.contentBData}
-                    isPanelToggleOn={this.props.isPanelToggleOn}
-                    panelClick={this.props.panelClick}
-                />
-            </div>
-        )
-    }
-};
+const Content = ({ isToggleOn, ...props }) => (
+    <div className={isToggleOn ? "ContentShow": "ContentHide"}>
+        <PanelA {...props} />
+        <PanelB {...props} />
+    </div>
+);
 
 export default Content;

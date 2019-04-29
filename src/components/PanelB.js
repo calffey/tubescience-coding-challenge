@@ -1,17 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../App.css';
 
-class PanelB extends Component {
-    render(){
-        return(
-            <div 
-                className={this.props.isPanelToggleOn ? "PanelShow" : "PanelHide"}
-                onClick={this.props.panelClick}
-            >
-               <h1>{this.props.contentBData}</h1>
-            </div>
-        )
-    }
-};
+const PanelB = ({ isPanelToggleOn, panelClick, contentB }) => (    
+    <div 
+        className={isPanelToggleOn ? "PanelShow" : "PanelHide"}
+        onClick={panelClick}
+    >
+        <h1>{contentB}</h1>
+    </div>
+);
 
 export default PanelB;
